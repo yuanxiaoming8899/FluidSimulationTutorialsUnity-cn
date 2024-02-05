@@ -1,648 +1,323 @@
-# 简介
-
-游戏流体力学基础及unity代码
-
-github地址https://github.com/clatterrr/FluidSimulationTutorialsUnity
-
-gitee码云地址https://gitee.com/clatterrr/FluidSimulationTutorialsUnity
-
-qq模拟流体交流群1001290801，欢迎加入
-
-代码作者：光影帽子
-
-# 地址
-
-【游戏流体力学基础及Unity代码（一）】热传导方程
-
-https://zhuanlan.zhihu.com/p/263053689
-
-【游戏流体力学基础及Unity代码（二）】有限差分法
-
-https://zhuanlan.zhihu.com/p/264153771
-
-【游戏流体力学基础及Unity代码（三）】用波动方程模拟三维落雨池塘，连续性方程
-
-https://zhuanlan.zhihu.com/p/264585002
-
-![Alt Text](images\ch03WaveEquation.PNG)
-
-【游戏流体力学基础及Unity代码（四）】用欧拉方程模拟无粘性染料之公式推导
-
-https://zhuanlan.zhihu.com/p/270530827
-
-【游戏流体力学基础及Unity代码（五）】用欧拉方程模拟无粘性染料之代码实现
-
-https://zhuanlan.zhihu.com/p/270531017
-
-![Alt Text](images\ch05EulerEquation.png)
-
-【游戏流体力学基础及Unity代码（六）】用NavierStokes方程模拟粘性染料流动
-
-https://zhuanlan.zhihu.com/p/283662524
-
-![Alt Text](images\ch06NavierStokes.png)
-
-【游戏流体力学基础及Unity代码（七）】车流量问题，非线性水波以及burgers方程
-
-https://zhuanlan.zhihu.com/p/309860521
-
-【游戏流体力学基础及Unity代码（八）】有限体积法
-
-https://zhuanlan.zhihu.com/p/331771977
-
-【游戏流体力学基础及Unity代码（九）】用浅水波方程模拟雨落池塘和DamBreak
-
-https://zhuanlan.zhihu.com/p/331781508
-
-![Alt Text](images\ch09ShallowWater.png)
-
-B站视频https://www.bilibili.com/video/BV1Ry4y167MV
-
-【游戏流体力学基础及Unity代码（十）】漩涡和模拟二维烟雾
-
-https://zhuanlan.zhihu.com/p/340842666
-
-![Alt Text](images\ch10smoke2d.png)
-
-【游戏流体力学基础及Unity代码（十一）】理想流体机翼绕流和升力原理
-
-https://zhuanlan.zhihu.com/p/340848576
-
-![Alt Text](images\ch11SourceSink.png)
-
-【游戏流体力学基础及Unity代码（十二）】卡门涡街，边界层，涡方法
-
-https://zhuanlan.zhihu.com/p/345332340
-
- ![Alt Text](images\ch12VorteXStreet.png)
-
-B站视频https://www.bilibili.com/video/BV1u5411H7hr
-
-【游戏流体力学基础及Unity代码（十三）】泊松压力方程，SIMPLE算法
-
-https://zhuanlan.zhihu.com/p/347410166
-
-【游戏流体力学基础及Unity代码（十四）】舌尖上的有限元Galerkin法
-
-https://zhuanlan.zhihu.com/p/358033368
-
-【游戏流体力学基础及Unity代码（十五）】线性有限元及弹性物体模拟
-
-https://zhuanlan.zhihu.com/p/369505527
-
-波前推进法网格生成https://www.bilibili.com/video/BV1ZK4y1w7R6/
-
-![Alt Text](images/ch15meshgen.png)
-
-弹性果冻模拟https://www.bilibili.com/video/BV1w84y1c7K2/
-
-![Alt Text](images/ch15jelly.png)
-
-【游戏流体力学基础及Unity代码（十六）】非线性有限元及牛顿迭代法
-
-https://zhuanlan.zhihu.com/p/369521901
-
-# 收集
-
-之后预计很长一段时间不会更新了。是为了确保教程质量，以及不犯低级错误。所以你可能会发现一大堆没对应教程的代码，这些宝贵的代码收集起来很不容易，我会尽量保证代码可读性，以及我是从哪里得到的。不过一般我下载到的都是matlab或c++的，我会把它转写成python以加深理解。
-
-以下是我收集的一些代码和网址，觉得很不错就贴上来，不定时更新。不过这些网址可能随时会挂掉
-
-### 浸入边界法Immersed Boundary Method
-
-https://sites.google.com/view/sglee/research 进入页面，搜索code，找到“\21. Wanho Lee and Seunggyu Lee, Immersed boundary method for simulating interfacial problems, Mathematics 8(11) (2020) 1982 [..](https://drive.google.com/file/d/1aeJv_8TqKAmYVYxu9R36yhnCNwJFoxFd/view?usp=sharing) (IF2019:1.747) ([code](https://drive.google.com/file/d/1zwRWtJG8cu6lqRBnzYHYbpWHuZNfMmFU/view?usp=sharing))”字样，点击code即可下载。这个页面上还有许多文章是可免费下载的
-
-https://github.com/nickabattista/IB2d 很棒的开源库，有代码，论文和视频
-
-https://www.math.nyu.edu/~peskin/ib_lecture_notes/index.html
-
-https://github.com/shurikkuzmin/ImmersedBoundary
-
-### 半拉格朗日Semi-Lagrange
-
-https://github.com/iCFD/SemiLagrangian
-
-D:\FluidSim\FluidSim\semilagrange\SemiLagrangian-master
-
-https://github.com/abarret/SemiLagrangian
-
-
-
-
-
-### Fluid Solid Interaction
-
-An Introduction to Fluid-Structure Interaction: Application to the Piston Problem  
-
-项目地址 ： http://www.utc.fr/~elefra02/ifs/
-
-代码地址：http://www.utc.fr/~elefra02/ifs/archive_FSI.tar.gz
-
-本地代码：D:\FluidSim\FluidSim\FluidSolidInteraction\archive_FSI
-
-https://github.com/WhiteTshirtXI/IBFS_M
-
-### 有限元
-
-Efficient implementation of adaptive P1-FEM in Matlab
-
-https://www.pplusplus.lima-city.de/femfluid.html Pressure Solve with Finite Elements  很好的matlab库
-
-代码地址：https://www.pplusplus.lima-city.de/lib/data/femfluid/FEM%20Fluid%20Source.zip
-
-本地地址：D:\FluidSim\FluidSim\FEMNEW\FEM Fluid Source\FEM Fluid
-
-https://www.math.hu-berlin.de/~cc/cc_homepage/software/software.shtml 
-
-Computationally Solving Nonlinear Membranes with Plane Stress Condition  
-
-https://github.com/vasko6d/finite-element-solver
-
-D:\FluidSim\FluidSim\FEMGOOD\finite-element-solver-master\finite-element-solver-master
-
-H^1-Stability of the L^2-Projection onto Finite Element Spaces on Adaptively Refined Quadrilateral Meshes
-
-https://github.com/aschmidtuulm/h1-stability
-
-https://github.com/Vinay5SVeerapur/Finite-element-analysis/blob/master/BEAM%20equation.ipynb
-
-https://github.com/tobyvg/Fluid-codes 方强流
-
-https://github.com/Milad-Rakhsha/FEM_PDE 有限元解势流
-
-https://github.com/emarinhoss/FEM_PETSC
-
-https://github.com/RnkSngh/Double-Slit-Experiment 双缝
-
-https://github.com/shardoolk/FEM
-
-https://github.com/jborggaard/ns2d
-
-https://github.com/Satchit4/Navier-stokes
-
-https://github.com/coltonjconroy/DG_2d_lava_flows
-
-https://github.com/nileshjchoudhary/Flow-through-driven-cavity-Finite-element-analysis-CFD
-
-https://github.com/Hahany/Finite-element-method
-
-https://zenodo.org/record/4011630#.YMs3l2hLjIV
-
- https://git.lacan.upc.edu/hybridLab/HDGlab HDGlab: An Open-Source Implementation of the Hybridisable Discontinuous Galerkin Method in MATLAB，里面的四边形八边形单元数据挺多
-
-https://github.com/FESTUNG/FESTUNG
-
-https://github.com/mfem/mfem
-
-https://github.com/matlabfem/matlab_fem_elastoplasticity Efficient and flexible MATLAB implementation of 2D and 3D elastoplastic problems
-
-### Galerkin
-
-An Introduction to Element-based Galerkin Methods on Tensor-Product Bases: Analysis, Algorithms, and Applications
-
-https://github.com/fxgiraldo/Element-based-Galerkin-Methods
-
-D:\FluidSim\FluidSim\Galerkin\Element-based-Galerkin-Methods-master\Element-based-Galerkin-Methods-master
-
-https://github.com/tuhouwang?tab=repositories
-
-Nodal Based Galerkin
-
-https://github.com/Achyut2404/nodalDG
-
-D:\FluidSim\FluidSim\Galerkin\nodalDG-master\src
-
-https://github.com/Jacklswalsh/DGM-Advection-AD 自适应快速一维Galerkin
-
-D:\FluidSim\FluidSim\Galerkin\DGM-Advection-AD-main
-
-https://github.com/asdf123101/HDPG1D
-
-D:\FluidSim\FluidSim\Galerkin\HDPG1D-master
-
-https://github.com/hanveiga/higher-order-methods/blob/master/dg1d.py
-
-https://github.com/wme7/cprlinearexamples 画正方形
-
-https://github.com/AndrewWang996/Discontinuous-Galerkin
-
-https://github.com/Chang-Liu-0520/1D_advec_DG
-
-https://github.com/pinkieli/Interpolation-Nodes-for-High-order-Lagrange-Finite-Elements.Nodal Discontinuous Galerkin Methods: Algorithms, Analysis, and Applications", Jan S Hesthaven and Tim Warburton.
-
-https://github.com/QuazarTech/DG_Maxwell
-
-### Unstructed mesh
-
-D:\FluidSim\FluidSim\NavierStokes\circular tankhttps://sourceforge.net/projects/circularwavetank/
-
-Development of Numerical Circular Wave Basin and Investigation of Tsunami-Structure Interaction  
-
-HILBERT is a Matlab library for *h*-adaptive Galerkin BEMhttps://www.asc.tuwien.ac.at/~praetorius/?id=hilbert
-
-### 谱方法
-
-SPECTRAL METHOD FOR TIME DEPENDENT NAVIER-STOKES
-EQUATIONS  
-
-http://cpraveen.github.io/teaching/chebpy.html
-
-### 数值积分
-
-https://github.com/jgressier/flowdyn/blob/master/flowdyn/integration.py RK4 low storage
-
-### 边界元
-
-https://team-pancho.github.io/deltaBEM/download.html
-
-### 线性方程组的迭代解法
-
-http://www.netlib.org/templates/matlab/ 就是一些共轭梯度，预处理的共轭梯度，最小残差GMRES，双共轭梯度
-
-https://github.com/JuliaLinearAlgebra/IterativeSolvers.jl Julia语言实现的各种方程组解法。
-
-*Optimization in Practice with MATLAB®: For Engineering Students and Professionals* 最优化书籍
-
-https://github.com/Manchery/numerical-analysis-practice
-
-https://github.com/JordanFisher/Paper-Implicit-IBM-2D/blob/master/CODE%20FREEZE/NewHeartValveSim.py 有预处理共轭梯度，快速雅可比等
-
-https://github.com/JuliaNLSolvers/NLsolve.jl/blob/master/src/solvers/trust_region.jl 置信域
-
-https://github.com/Hannah-Zhou/Optimization_Algorithm
-
-计算电磁学中的超大规模并行矩量法
-
-https://github.com/team-pancho/deltaBEM
-
-https://github.com/taichi-dev/taichi/blob/master/examples/mgpcg_advanced.py
-
-### 网格生成
-
-http://persson.berkeley.edu/ 特别棒的二维三维网格生成的matlab代码
-
-https://ifsnumericaltools.weebly.com/ 也是很棒的代码 D:\FluidSim\MathsWorkMisc\mesh2d_v24\Mesh2d_v24
-
-https://github.com/aschmidtuulm/ameshref Adaptive Mesh Refinement in 2D–An Efficient Implementation in Matlab论文对应的代码
-
-TetGen http://wias-berlin.de/software/tetgen/formAction12.jsp
-
-D:\FluidSim\OpenSource\tetgen1.5.1\tetgen1.5.1
-
-https://doc.cgal.org/4.13/Manual/tutorials.html
-
-Persson, P. O., and G. Strang (2004), A simple mesh generator in MATLAB  
-
-http://www.robertschneiders.de/meshgeneration/software.html
-
-Adaptive Mesh Refinement in 2D An Efficient Implementation in Matlab for Triangular and Quadrilateral Meshes  
-
-H1-STABILITY OF THE L2-PROJECTION ONTO FINITE ELEMENT SPACES ON ADAPTIVELY REFINED QUADRILATERAL MESHES  
-
-Adaptive Mesh Refinement in 2D An Efficient Implementation in Matlab  
-
-### 非定常流
-
-https://www.mathworks.com/matlabcentral/fileexchange/?q=profileid:4187051
-
-### 声学
-
-Physically Based Sound for Computer Animation and Virtual Environments
-
-[ACM SIGGRAPH 2016 Course](http://s2016.siggraph.org/courses/events/physically-based-sound-computer-animation-and-virtual-environments)
-
-### 水平集
-
-教授Osher Stanley,
-
-*Geometric Level Set Methods in Imaging,Vision & Graphics*
-
-https://www.cs.ubc.ca/~mitchell/ToolboxLS/ matlab示例，非常棒的成系统的代码。
-
-https://github.com/scikit-image/scikit-image/blob/main/skimage/segmentation/_chan_vese.py 有一个有名的python库叫scikit-image，里面实现了chanvese算法
-
-*A discrete level-set topology optimization code written in Matlab*
-
-### Closet Point Method
-
-https://www.math.ubc.ca/~cbm/cpm/
-
-https://github.com/kimy-de/gpuallencahn 阿兰方程
-
-### 多孔介质
-
-An Introduction to the Numerics of Flow in Porous Media using Matlab  
-
-https://github.com/pmgbergen/porepy
-
-https://github.com/jjhidalgo/HGCchem2 有分层现象，大佬主页https://jjhidalgo.wordpress.com/codes/
-
-### 浅水波
-
-项目地址：https://web.cse.ohio-state.edu/~wang.3602/courses/cse3541-2019-fall/index.html
-
-unity 包：https://web.cse.ohio-state.edu/~wang.3602/courses/cse3541-2019-fall/lab4/wave_example.unitypackage
-
-### 多重网格
-
-http://pages.cs.wisc.edu/~sifakis/project_pages/mgpcg.html 并行多重网格泊松求解器附代码
-
-https://github.com/JuliaLinearAlgebra/AlgebraicMultigrid.jl/tree/master/src 代数多重网格
-
-https://github.com/danfortunato 直接关注这个人就行了
-
-https://github.com/pymatting/pymatting/blob/master/pymatting/preconditioner/vcycle.py
-
-https://github.com/lyc102/ifem ifem
-
-https://amgcl.readthedocs.io/en/latest/examples.html
-
-https://github.com/evstigneevnm/GMG_2D_tests
-
-https://github.com/gnitish18/FEM_Multigrid
-
-### 多相流
-
-2D Cartesian Quadtree Adaptive Mesh Refinement (AMR) for multiphase Five Equations Model.https://github.com/dattv/2D_CARFIVE
-
-https://github.com/Spoonacular/LBM_python
-
-https://github.com/mirsandiharyo/multiphase_flows_front_tracking_python 模拟泡泡和水滴
-
-https://github.com/rarbarim/multiphase_flow_simulator 附带报告，作者还有一些别的代码
-
-### 数学
-
-http://pages.cs.wisc.edu/~sifakis/project_pages/svd.html Computing the Singular Value Decomposition of 3x3 matrices with minimal branching and elementary floating point operations附代码
-
-### 泡泡
-
-Role of the Dynamic Contact Angle on Splashing  
-
-### 湍流
-
-DNSLABhttps://md-datasets-cache-zipfiles-prod.s3.eu-west-1.amazonaws.com/6gtnjwwg8j-1.zip
-
-LESCODE https://cfd.engr.uconn.edu/ 不过代码需要填个申请表格才能获取
-
-本地代码地址：D:\FluidSim\FluidSim\LES\les.r123\les
-
-Turbulent Fluids – SIGGRAPH Course https://ge.in.tum.de/research/turbulent-fluids-siggraph-course/
-
-https://github.com/thijsbon/CMF_project_thijs_victor 有湍流和墙函数
-
-https://github.com/Maikuelet/Turbulence_Modelling_Burgulence
-
-https://github.com/nasa/gfr
-
-https://github.com/nasa/TLNS3D
-
-### 边界元
-
-https://github.com/Timmmdavis/CutAndDisplace
-
-https://github.com/Timmmdavis/CutAndDisplace
-
-### 碰撞检测
-
-Fast Continuous Collision Detection using Deforming Non-Penetration Filters
-
-项目地址：http://gamma.cs.unc.edu/DNF/
-
-代码地址：http://gamma.cs.unc.edu/DNF/request.html
-
-### 形状优化
-
-https://github.com/jorgensd/MultiMeshShapeOpt_code
-
-### 电磁学
-
-A generalized polynomial chaos based ensemble Kalman filter with high accuracy  
-
-https://github.com/Andrewpensoneault/Lorenz_63_Stochastic_Galerkin_EnKF
-
-https://github.com/joebling/graduate_essay
-
-https://github.com/Mjjnuu/DoublePendulum 似乎是宇宙学
-
-D:\FluidSim\Electron\DoublePendulum-master\python
-
-An introduction to reservoir simulation using MATLAB  
-
-https://github.com/keileg/fvbiot
-
-https://github.com/tarcisiofischer/helmholtz-solver/tree/master/src/python
-
-https://github.com/ep2lab 一些磁流体
-
-https://github.com/mgoycoolea/twofluid/blob/master/twofluid.py
-
-https://github.com/trevorcrupi/EM-MG 电磁学的多重网格
-
-https://github.com/rasalkumar/FEM
-
-https://github.com/ocramz/lib_FEM_py
-
-https://github.com/eduardobehr/pyjoule
-
-https://github.com/briandaniel/ComputationalElectromagnetics
-
-https://github.com/utsav-akhaury/Computational-Electromagnetics-FDTD-Analysis/blob/master/Microstrip_SW-2.py
-
-Commics is an open-source Python module for the study of the magnetization dynamics in ferromagnetic materials via micromagnetic simulations.https://www.asc.tuwien.ac.at/~praetorius/?id=commics
-
-### 声学
-
-http://www.k-wave.org/download.php
-
-https://github.com/pvanberg/DGFEM-Acoustic
-
-https://github.com/1ceaham/AcousticFVTD_GeneralImpedance
-
-https://github.com/ivanmartinezsuarez/Matlab_FVM
-
-### 粘弹性
-
-https://github.com/labsin-unesp/Viscoel-stico-Kelvin-Voigt
-
-### 杂
-
-https://people.sc.fsu.edu/~jburkardt/m_src/ 有各种各样的有限元matlab代码
-
-https://github.com/weymouth/WaterLily.jl 漂亮的NS方程模拟
-
-Extraction of Distinguished Hyperbolic Trajectories for 2D Time-Dependent Vector Field Topology
-
-介绍页面：https://vcg.iwr.uni-heidelberg.de/people/sadlo/
-
-代码地址：https://github.com/lhofmann/eurovis2020_hyperbolic_trajectories
-
-A PArallel Robust Interface Simulator that combines VOF and Front-Tracking
-
-介绍页面：http://www.ida.upmc.fr/~zaleski/paris/index.html
-
-代码地址：http://www.ida.upmc.fr/~zaleski/paris/paris-stable.tar.gz
-
-A Hyperbolic Geometric Flow for Evolving Films and Foams
-
-项目地址：https://ryichando.graphics/
-
-代码地址：https://github.com/sdsgisd/HGF
-
-Interpolation Nodes for High-order Lagrange Finite Elements
-
-https://github.com/pinkieli/Interpolation-Nodes-for-High-order-Lagrange-Finite-Elements.
-
-Semi-Riemannian Manifold Optimization
-
-https://github.com/trgao10/SemiRiem
-
-https://github.com/noamaig/hyperbolic_orbifolds
-
-An entropy-stable hybrid scheme for simulations of transcritical real-fluid flow[JCP的]
-
-https://github.com/peterma123456789/DoubleFlux-1D
-
-Ice sheet flow with thermally activated sliding
-
-https://github.com/elisamantelli/subtemperate_sliding_rspa_2019
-
-Wavelet-Fourier CORSING techniques for multi-dimensional advection-diffusion-reaction equations
-
-https://github.com/simone-brugiapaglia/corsing-wavelet-fourier-adr
-
-River Profile
-
-https://github.com/sfgallen/ChiProfiler
-
-https://github.com/ISSI2015/M4 Real-Time Deformation
-
-A fast implicit method for time-dependent Hamilton-Jacobi PDEs
-
-### 超声速可压缩
-
-https://github.com/Fanxiaotsing/One-dimensional-aero-heating-code 平板对流换热
-
-https://github.com/holdmygithub/ASOInviscidSupersonicFlow 机翼设计
-
-D:\FluidSim\FluidSim\NavierStokes\ASOInviscidSupersonicFlow-master\ASOInviscidSupersonicFlow-master
-
-https://github.com/amikkonen/lidDrivenCavityCompressibleFlowPython 可压缩顶盖驱动
-
-https://github.com/GerardBoberg/CompressiblePipeFlow
-
-D:\FluidSim\FluidSim\CompressibeNewgood\CompressiblePipeFlow-master\CompressiblePipeFlow-master
-
-https://home.cscamm.umd.edu/centpack/examples/euler2d.htm#press
-
-https://github.com/silentmovie/RTmodel RT不稳定
-
-PYRO2 开源库https://python-hydro.github.io/pyro2/compressible_basics.html
-
-超级好https://github.com/jingchangshi/NumericalMethodsForConservationLawsDG
-
-https://archive.siam.org/books/cs18/
-
-### 空气动力
-
-https://github.com/Maikuelet/FEM_Airplane
-
-### SIMPLE/PISO
-
-https://github.com/mehrdadyo/LS-IBM
-
-Joukowski transformhttps://www.research-collection.ethz.ch/handle/20.500.11850/146738
-
-### 混合网格粒子法
-
-PolyPIC: the Polymorphic-Particle-in-Cell Method for Fluid-Kinetic Coupling
-
-https://github.com/smarkidis/fluid-kinetic-PIC
-
-### 大佬主页
-
-下面的主页全部是附有开源代码的
-
-https://cs.uwaterloo.ca/~c2batty/
-
-https://zhxx1987.github.io/#cod 猜猜这是谁？
-
-http://gamma.cs.unc.edu/software/ 这是个项目主页，开源代码很多
-
-https://www.cc.gatech.edu/~turk/
-
-https://people.llnl.gov/lindstrom2 偏向几何数据处理
-
-http://ntoken.com/pubs.html#Thuerey_2016_ofblend
-
-http://www.tkim.graphics/
-
-http://www.cmap.polytechnique.fr/~allaire/
-
-https://sites.google.com/view/valentinresseguier/projects
-
-https://www.konrad-simon.eu/wordpress/?page_id=91
-
-http://www-personal.umich.edu/~ndk/
-
-https://people.ece.ubc.ca/kaynama/
-
-https://math.berkeley.edu/~strain/Codes/index.html
-
-https://www.cwimd.nl/doku.php?id=codes:start
-
-https://www.cwi.nl/research/groups/multiscale-dynamics#software
-
-https://math.nist.gov/~WMitchell/
-
-https://www.mcs.anl.gov/~fischer/me528/
-
-### Particle In Cell
-
-https://medium.com/swlh/create-your-own-plasma-pic-simulation-with-python-39145c66578b
-
-吐槽这个网站验证机制太弱智，如果它要求你升级会员才能查看剩下内容，那么你只要重新换个浏览器就行了。
-
-https://www.particleincell.com/2011/particle-in-cell-example/
-
-https://personalpages.manchester.ac.uk/staff/david.silvester/
-
-### 开源项目
-
-pyro2
-
-netgen
-
-scipy这玩意有一些矩阵迭代求解法
-
-http://granoo.52083.n8.nabble.com/
-
-clawpack
-
-aspect https://aspect.geodynamics.org/
-
-dealii
-
-fenics
-
-http://milamin.org/downloads/
-
-https://personalpages.manchester.ac.uk/staff/david.silvester/ifiss/
-
-
-
-### 不错的论文
-
-内容很棒的论文以及讲义
-
-Lecture notes Introduction to numerical methods for interfacial flows  
-
-### 很有个性的论文标题
-
-内容不管，但是标题值得写上一万字来吐槽
-
-A massive fractal in days, not years
-
-### 没用但暂时不删的链接
-
-code_aster https://code-aster.org/spip.php?article920
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><h1 tabindex="-1" dir="auto"><a id="user-content-简介" class="anchor" aria-hidden="true" tabindex="-1" href="#简介"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>简介</h1>
+<p dir="auto">游戏流体力学基础及unity代码</p>
+<p dir="auto">github地址<a href="https://github.com/clatterrr/FluidSimulationTutorialsUnity">https://github.com/clatterrr/FluidSimulationTutorialsUnity</a></p>
+<p dir="auto">gitee码云地址<a href="https://gitee.com/clatterrr/FluidSimulationTutorialsUnity" rel="nofollow">https://gitee.com/clatterrr/FluidSimulationTutorialsUnity</a></p>
+<p dir="auto">qq模拟流体交流群1001290801，欢迎加入</p>
+<p dir="auto">代码作者：光影帽子</p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-地址" class="anchor" aria-hidden="true" tabindex="-1" href="#地址"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>地址</h1>
+<p dir="auto">【游戏流体力学基础及Unity代码（一）】热传导方程</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/263053689" rel="nofollow">https://zhuanlan.zhihu.com/p/263053689</a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（二）】有限差分法</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/264153771" rel="nofollow">https://zhuanlan.zhihu.com/p/264153771</a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（三）】用波动方程模拟三维落雨池塘，连续性方程</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/264585002" rel="nofollow">https://zhuanlan.zhihu.com/p/264585002</a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/clatterrr/FluidSimulationTutorialsUnity/blob/main/images%5Cch03WaveEquation.PNG"><img src="/clatterrr/FluidSimulationTutorialsUnity/raw/main/images%5Cch03WaveEquation.PNG" alt="Alt Text" style="max-width: 100%;"></a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（四）】用欧拉方程模拟无粘性染料之公式推导</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/270530827" rel="nofollow">https://zhuanlan.zhihu.com/p/270530827</a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（五）】用欧拉方程模拟无粘性染料之代码实现</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/270531017" rel="nofollow">https://zhuanlan.zhihu.com/p/270531017</a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/clatterrr/FluidSimulationTutorialsUnity/blob/main/images%5Cch05EulerEquation.png"><img src="/clatterrr/FluidSimulationTutorialsUnity/raw/main/images%5Cch05EulerEquation.png" alt="Alt Text" style="max-width: 100%;"></a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（六）】用NavierStokes方程模拟粘性染料流动</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/283662524" rel="nofollow">https://zhuanlan.zhihu.com/p/283662524</a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/clatterrr/FluidSimulationTutorialsUnity/blob/main/images%5Cch06NavierStokes.png"><img src="/clatterrr/FluidSimulationTutorialsUnity/raw/main/images%5Cch06NavierStokes.png" alt="Alt Text" style="max-width: 100%;"></a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（七）】车流量问题，非线性水波以及burgers方程</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/309860521" rel="nofollow">https://zhuanlan.zhihu.com/p/309860521</a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（八）】有限体积法</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/331771977" rel="nofollow">https://zhuanlan.zhihu.com/p/331771977</a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（九）】用浅水波方程模拟雨落池塘和DamBreak</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/331781508" rel="nofollow">https://zhuanlan.zhihu.com/p/331781508</a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/clatterrr/FluidSimulationTutorialsUnity/blob/main/images%5Cch09ShallowWater.png"><img src="/clatterrr/FluidSimulationTutorialsUnity/raw/main/images%5Cch09ShallowWater.png" alt="Alt Text" style="max-width: 100%;"></a></p>
+<p dir="auto">B站视频<a href="https://www.bilibili.com/video/BV1Ry4y167MV" rel="nofollow">https://www.bilibili.com/video/BV1Ry4y167MV</a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（十）】漩涡和模拟二维烟雾</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/340842666" rel="nofollow">https://zhuanlan.zhihu.com/p/340842666</a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/clatterrr/FluidSimulationTutorialsUnity/blob/main/images%5Cch10smoke2d.png"><img src="/clatterrr/FluidSimulationTutorialsUnity/raw/main/images%5Cch10smoke2d.png" alt="Alt Text" style="max-width: 100%;"></a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（十一）】理想流体机翼绕流和升力原理</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/340848576" rel="nofollow">https://zhuanlan.zhihu.com/p/340848576</a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/clatterrr/FluidSimulationTutorialsUnity/blob/main/images%5Cch11SourceSink.png"><img src="/clatterrr/FluidSimulationTutorialsUnity/raw/main/images%5Cch11SourceSink.png" alt="Alt Text" style="max-width: 100%;"></a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（十二）】卡门涡街，边界层，涡方法</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/345332340" rel="nofollow">https://zhuanlan.zhihu.com/p/345332340</a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/clatterrr/FluidSimulationTutorialsUnity/blob/main/images%5Cch12VorteXStreet.png"><img src="/clatterrr/FluidSimulationTutorialsUnity/raw/main/images%5Cch12VorteXStreet.png" alt="Alt Text" style="max-width: 100%;"></a></p>
+<p dir="auto">B站视频<a href="https://www.bilibili.com/video/BV1u5411H7hr" rel="nofollow">https://www.bilibili.com/video/BV1u5411H7hr</a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（十三）】泊松压力方程，SIMPLE算法</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/347410166" rel="nofollow">https://zhuanlan.zhihu.com/p/347410166</a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（十四）】舌尖上的有限元Galerkin法</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/358033368" rel="nofollow">https://zhuanlan.zhihu.com/p/358033368</a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（十五）】线性有限元及弹性物体模拟</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/369505527" rel="nofollow">https://zhuanlan.zhihu.com/p/369505527</a></p>
+<p dir="auto">波前推进法网格生成<a href="https://www.bilibili.com/video/BV1ZK4y1w7R6/" rel="nofollow">https://www.bilibili.com/video/BV1ZK4y1w7R6/</a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/clatterrr/FluidSimulationTutorialsUnity/blob/main/images/ch15meshgen.png"><img src="/clatterrr/FluidSimulationTutorialsUnity/raw/main/images/ch15meshgen.png" alt="Alt Text" style="max-width: 100%;"></a></p>
+<p dir="auto">弹性果冻模拟<a href="https://www.bilibili.com/video/BV1w84y1c7K2/" rel="nofollow">https://www.bilibili.com/video/BV1w84y1c7K2/</a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/clatterrr/FluidSimulationTutorialsUnity/blob/main/images/ch15jelly.png"><img src="/clatterrr/FluidSimulationTutorialsUnity/raw/main/images/ch15jelly.png" alt="Alt Text" style="max-width: 100%;"></a></p>
+<p dir="auto">【游戏流体力学基础及Unity代码（十六）】非线性有限元及牛顿迭代法</p>
+<p dir="auto"><a href="https://zhuanlan.zhihu.com/p/369521901" rel="nofollow">https://zhuanlan.zhihu.com/p/369521901</a></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-收集" class="anchor" aria-hidden="true" tabindex="-1" href="#收集"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>收集</h1>
+<p dir="auto">之后预计很长一段时间不会更新了。是为了确保教程质量，以及不犯低级错误。所以你可能会发现一大堆没对应教程的代码，这些宝贵的代码收集起来很不容易，我会尽量保证代码可读性，以及我是从哪里得到的。不过一般我下载到的都是matlab或c++的，我会把它转写成python以加深理解。</p>
+<p dir="auto">以下是我收集的一些代码和网址，觉得很不错就贴上来，不定时更新。不过这些网址可能随时会挂掉</p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-浸入边界法immersed-boundary-method" class="anchor" aria-hidden="true" tabindex="-1" href="#浸入边界法immersed-boundary-method"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>浸入边界法Immersed Boundary Method</h3>
+<p dir="auto"><a href="https://sites.google.com/view/sglee/research" rel="nofollow">https://sites.google.com/view/sglee/research</a> 进入页面，搜索code，找到“\21. Wanho Lee and Seunggyu Lee, Immersed boundary method for simulating interfacial problems, Mathematics 8(11) (2020) 1982 <a href="https://drive.google.com/file/d/1aeJv_8TqKAmYVYxu9R36yhnCNwJFoxFd/view?usp=sharing" rel="nofollow">..</a> (IF2019:1.747) (<a href="https://drive.google.com/file/d/1zwRWtJG8cu6lqRBnzYHYbpWHuZNfMmFU/view?usp=sharing" rel="nofollow">code</a>)”字样，点击code即可下载。这个页面上还有许多文章是可免费下载的</p>
+<p dir="auto"><a href="https://github.com/nickabattista/IB2d">https://github.com/nickabattista/IB2d</a> 很棒的开源库，有代码，论文和视频</p>
+<p dir="auto"><a href="https://www.math.nyu.edu/~peskin/ib_lecture_notes/index.html" rel="nofollow">https://www.math.nyu.edu/~peskin/ib_lecture_notes/index.html</a></p>
+<p dir="auto"><a href="https://github.com/shurikkuzmin/ImmersedBoundary">https://github.com/shurikkuzmin/ImmersedBoundary</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-半拉格朗日semi-lagrange" class="anchor" aria-hidden="true" tabindex="-1" href="#半拉格朗日semi-lagrange"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>半拉格朗日Semi-Lagrange</h3>
+<p dir="auto"><a href="https://github.com/iCFD/SemiLagrangian">https://github.com/iCFD/SemiLagrangian</a></p>
+<p dir="auto">D:\FluidSim\FluidSim\semilagrange\SemiLagrangian-master</p>
+<p dir="auto"><a href="https://github.com/abarret/SemiLagrangian">https://github.com/abarret/SemiLagrangian</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-fluid-solid-interaction" class="anchor" aria-hidden="true" tabindex="-1" href="#fluid-solid-interaction"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Fluid Solid Interaction</h3>
+<p dir="auto">An Introduction to Fluid-Structure Interaction: Application to the Piston Problem</p>
+<p dir="auto">项目地址 ： <a href="http://www.utc.fr/~elefra02/ifs/" rel="nofollow">http://www.utc.fr/~elefra02/ifs/</a></p>
+<p dir="auto">代码地址：<a href="http://www.utc.fr/~elefra02/ifs/archive_FSI.tar.gz" rel="nofollow">http://www.utc.fr/~elefra02/ifs/archive_FSI.tar.gz</a></p>
+<p dir="auto">本地代码：D:\FluidSim\FluidSim\FluidSolidInteraction\archive_FSI</p>
+<p dir="auto"><a href="https://github.com/WhiteTshirtXI/IBFS_M">https://github.com/WhiteTshirtXI/IBFS_M</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-有限元" class="anchor" aria-hidden="true" tabindex="-1" href="#有限元"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>有限元</h3>
+<p dir="auto">Efficient implementation of adaptive P1-FEM in Matlab</p>
+<p dir="auto"><a href="https://www.pplusplus.lima-city.de/femfluid.html" rel="nofollow">https://www.pplusplus.lima-city.de/femfluid.html</a> Pressure Solve with Finite Elements  很好的matlab库</p>
+<p dir="auto">代码地址：<a href="https://www.pplusplus.lima-city.de/lib/data/femfluid/FEM%20Fluid%20Source.zip" rel="nofollow">https://www.pplusplus.lima-city.de/lib/data/femfluid/FEM%20Fluid%20Source.zip</a></p>
+<p dir="auto">本地地址：D:\FluidSim\FluidSim\FEMNEW\FEM Fluid Source\FEM Fluid</p>
+<p dir="auto"><a href="https://www.math.hu-berlin.de/~cc/cc_homepage/software/software.shtml" rel="nofollow">https://www.math.hu-berlin.de/~cc/cc_homepage/software/software.shtml</a></p>
+<p dir="auto">Computationally Solving Nonlinear Membranes with Plane Stress Condition</p>
+<p dir="auto"><a href="https://github.com/vasko6d/finite-element-solver">https://github.com/vasko6d/finite-element-solver</a></p>
+<p dir="auto">D:\FluidSim\FluidSim\FEMGOOD\finite-element-solver-master\finite-element-solver-master</p>
+<p dir="auto">H^1-Stability of the L^2-Projection onto Finite Element Spaces on Adaptively Refined Quadrilateral Meshes</p>
+<p dir="auto"><a href="https://github.com/aschmidtuulm/h1-stability">https://github.com/aschmidtuulm/h1-stability</a></p>
+<p dir="auto"><a href="https://github.com/Vinay5SVeerapur/Finite-element-analysis/blob/master/BEAM%20equation.ipynb">https://github.com/Vinay5SVeerapur/Finite-element-analysis/blob/master/BEAM%20equation.ipynb</a></p>
+<p dir="auto"><a href="https://github.com/tobyvg/Fluid-codes">https://github.com/tobyvg/Fluid-codes</a> 方强流</p>
+<p dir="auto"><a href="https://github.com/Milad-Rakhsha/FEM_PDE">https://github.com/Milad-Rakhsha/FEM_PDE</a> 有限元解势流</p>
+<p dir="auto"><a href="https://github.com/emarinhoss/FEM_PETSC">https://github.com/emarinhoss/FEM_PETSC</a></p>
+<p dir="auto"><a href="https://github.com/RnkSngh/Double-Slit-Experiment">https://github.com/RnkSngh/Double-Slit-Experiment</a> 双缝</p>
+<p dir="auto"><a href="https://github.com/shardoolk/FEM">https://github.com/shardoolk/FEM</a></p>
+<p dir="auto"><a href="https://github.com/jborggaard/ns2d">https://github.com/jborggaard/ns2d</a></p>
+<p dir="auto"><a href="https://github.com/Satchit4/Navier-stokes">https://github.com/Satchit4/Navier-stokes</a></p>
+<p dir="auto"><a href="https://github.com/coltonjconroy/DG_2d_lava_flows">https://github.com/coltonjconroy/DG_2d_lava_flows</a></p>
+<p dir="auto"><a href="https://github.com/nileshjchoudhary/Flow-through-driven-cavity-Finite-element-analysis-CFD">https://github.com/nileshjchoudhary/Flow-through-driven-cavity-Finite-element-analysis-CFD</a></p>
+<p dir="auto"><a href="https://github.com/Hahany/Finite-element-method">https://github.com/Hahany/Finite-element-method</a></p>
+<p dir="auto"><a href="https://zenodo.org/record/4011630#.YMs3l2hLjIV" rel="nofollow">https://zenodo.org/record/4011630#.YMs3l2hLjIV</a></p>
+<p dir="auto"><a href="https://git.lacan.upc.edu/hybridLab/HDGlab" rel="nofollow">https://git.lacan.upc.edu/hybridLab/HDGlab</a> HDGlab: An Open-Source Implementation of the Hybridisable Discontinuous Galerkin Method in MATLAB，里面的四边形八边形单元数据挺多</p>
+<p dir="auto"><a href="https://github.com/FESTUNG/FESTUNG">https://github.com/FESTUNG/FESTUNG</a></p>
+<p dir="auto"><a href="https://github.com/mfem/mfem">https://github.com/mfem/mfem</a></p>
+<p dir="auto"><a href="https://github.com/matlabfem/matlab_fem_elastoplasticity">https://github.com/matlabfem/matlab_fem_elastoplasticity</a> Efficient and flexible MATLAB implementation of 2D and 3D elastoplastic problems</p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-galerkin" class="anchor" aria-hidden="true" tabindex="-1" href="#galerkin"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Galerkin</h3>
+<p dir="auto">An Introduction to Element-based Galerkin Methods on Tensor-Product Bases: Analysis, Algorithms, and Applications</p>
+<p dir="auto"><a href="https://github.com/fxgiraldo/Element-based-Galerkin-Methods">https://github.com/fxgiraldo/Element-based-Galerkin-Methods</a></p>
+<p dir="auto">D:\FluidSim\FluidSim\Galerkin\Element-based-Galerkin-Methods-master\Element-based-Galerkin-Methods-master</p>
+<p dir="auto"><a href="https://github.com/tuhouwang?tab=repositories">https://github.com/tuhouwang?tab=repositories</a></p>
+<p dir="auto">Nodal Based Galerkin</p>
+<p dir="auto"><a href="https://github.com/Achyut2404/nodalDG">https://github.com/Achyut2404/nodalDG</a></p>
+<p dir="auto">D:\FluidSim\FluidSim\Galerkin\nodalDG-master\src</p>
+<p dir="auto"><a href="https://github.com/Jacklswalsh/DGM-Advection-AD">https://github.com/Jacklswalsh/DGM-Advection-AD</a> 自适应快速一维Galerkin</p>
+<p dir="auto">D:\FluidSim\FluidSim\Galerkin\DGM-Advection-AD-main</p>
+<p dir="auto"><a href="https://github.com/asdf123101/HDPG1D">https://github.com/asdf123101/HDPG1D</a></p>
+<p dir="auto">D:\FluidSim\FluidSim\Galerkin\HDPG1D-master</p>
+<p dir="auto"><a href="https://github.com/hanveiga/higher-order-methods/blob/master/dg1d.py">https://github.com/hanveiga/higher-order-methods/blob/master/dg1d.py</a></p>
+<p dir="auto"><a href="https://github.com/wme7/cprlinearexamples">https://github.com/wme7/cprlinearexamples</a> 画正方形</p>
+<p dir="auto"><a href="https://github.com/AndrewWang996/Discontinuous-Galerkin">https://github.com/AndrewWang996/Discontinuous-Galerkin</a></p>
+<p dir="auto"><a href="https://github.com/Chang-Liu-0520/1D_advec_DG">https://github.com/Chang-Liu-0520/1D_advec_DG</a></p>
+<p dir="auto"><a href="https://github.com/pinkieli/Interpolation-Nodes-for-High-order-Lagrange-Finite-Elements.Nodal">https://github.com/pinkieli/Interpolation-Nodes-for-High-order-Lagrange-Finite-Elements.Nodal</a> Discontinuous Galerkin Methods: Algorithms, Analysis, and Applications", Jan S Hesthaven and Tim Warburton.</p>
+<p dir="auto"><a href="https://github.com/QuazarTech/DG_Maxwell">https://github.com/QuazarTech/DG_Maxwell</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-unstructed-mesh" class="anchor" aria-hidden="true" tabindex="-1" href="#unstructed-mesh"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Unstructed mesh</h3>
+<p dir="auto">D:\FluidSim\FluidSim\NavierStokes\circular tankhttps://sourceforge.net/projects/circularwavetank/</p>
+<p dir="auto">Development of Numerical Circular Wave Basin and Investigation of Tsunami-Structure Interaction</p>
+<p dir="auto">HILBERT is a Matlab library for <em>h</em>-adaptive Galerkin BEMhttps://<a href="http://www.asc.tuwien.ac.at/~praetorius/?id=hilbert" rel="nofollow">www.asc.tuwien.ac.at/~praetorius/?id=hilbert</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-谱方法" class="anchor" aria-hidden="true" tabindex="-1" href="#谱方法"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>谱方法</h3>
+<p dir="auto">SPECTRAL METHOD FOR TIME DEPENDENT NAVIER-STOKES
+EQUATIONS</p>
+<p dir="auto"><a href="http://cpraveen.github.io/teaching/chebpy.html" rel="nofollow">http://cpraveen.github.io/teaching/chebpy.html</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-数值积分" class="anchor" aria-hidden="true" tabindex="-1" href="#数值积分"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>数值积分</h3>
+<p dir="auto"><a href="https://github.com/jgressier/flowdyn/blob/master/flowdyn/integration.py">https://github.com/jgressier/flowdyn/blob/master/flowdyn/integration.py</a> RK4 low storage</p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-边界元" class="anchor" aria-hidden="true" tabindex="-1" href="#边界元"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>边界元</h3>
+<p dir="auto"><a href="https://team-pancho.github.io/deltaBEM/download.html" rel="nofollow">https://team-pancho.github.io/deltaBEM/download.html</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-线性方程组的迭代解法" class="anchor" aria-hidden="true" tabindex="-1" href="#线性方程组的迭代解法"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>线性方程组的迭代解法</h3>
+<p dir="auto"><a href="http://www.netlib.org/templates/matlab/" rel="nofollow">http://www.netlib.org/templates/matlab/</a> 就是一些共轭梯度，预处理的共轭梯度，最小残差GMRES，双共轭梯度</p>
+<p dir="auto"><a href="https://github.com/JuliaLinearAlgebra/IterativeSolvers.jl">https://github.com/JuliaLinearAlgebra/IterativeSolvers.jl</a> Julia语言实现的各种方程组解法。</p>
+<p dir="auto"><em>Optimization in Practice with MATLAB®: For Engineering Students and Professionals</em> 最优化书籍</p>
+<p dir="auto"><a href="https://github.com/Manchery/numerical-analysis-practice">https://github.com/Manchery/numerical-analysis-practice</a></p>
+<p dir="auto"><a href="https://github.com/JordanFisher/Paper-Implicit-IBM-2D/blob/master/CODE%20FREEZE/NewHeartValveSim.py">https://github.com/JordanFisher/Paper-Implicit-IBM-2D/blob/master/CODE%20FREEZE/NewHeartValveSim.py</a> 有预处理共轭梯度，快速雅可比等</p>
+<p dir="auto"><a href="https://github.com/JuliaNLSolvers/NLsolve.jl/blob/master/src/solvers/trust_region.jl">https://github.com/JuliaNLSolvers/NLsolve.jl/blob/master/src/solvers/trust_region.jl</a> 置信域</p>
+<p dir="auto"><a href="https://github.com/Hannah-Zhou/Optimization_Algorithm">https://github.com/Hannah-Zhou/Optimization_Algorithm</a></p>
+<p dir="auto">计算电磁学中的超大规模并行矩量法</p>
+<p dir="auto"><a href="https://github.com/team-pancho/deltaBEM">https://github.com/team-pancho/deltaBEM</a></p>
+<p dir="auto"><a href="https://github.com/taichi-dev/taichi/blob/master/examples/mgpcg_advanced.py">https://github.com/taichi-dev/taichi/blob/master/examples/mgpcg_advanced.py</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-网格生成" class="anchor" aria-hidden="true" tabindex="-1" href="#网格生成"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>网格生成</h3>
+<p dir="auto"><a href="http://persson.berkeley.edu/" rel="nofollow">http://persson.berkeley.edu/</a> 特别棒的二维三维网格生成的matlab代码</p>
+<p dir="auto"><a href="https://ifsnumericaltools.weebly.com/" rel="nofollow">https://ifsnumericaltools.weebly.com/</a> 也是很棒的代码 D:\FluidSim\MathsWorkMisc\mesh2d_v24\Mesh2d_v24</p>
+<p dir="auto"><a href="https://github.com/aschmidtuulm/ameshref">https://github.com/aschmidtuulm/ameshref</a> Adaptive Mesh Refinement in 2D–An Efficient Implementation in Matlab论文对应的代码</p>
+<p dir="auto">TetGen <a href="http://wias-berlin.de/software/tetgen/formAction12.jsp" rel="nofollow">http://wias-berlin.de/software/tetgen/formAction12.jsp</a></p>
+<p dir="auto">D:\FluidSim\OpenSource\tetgen1.5.1\tetgen1.5.1</p>
+<p dir="auto"><a href="https://doc.cgal.org/4.13/Manual/tutorials.html" rel="nofollow">https://doc.cgal.org/4.13/Manual/tutorials.html</a></p>
+<p dir="auto">Persson, P. O., and G. Strang (2004), A simple mesh generator in MATLAB</p>
+<p dir="auto"><a href="http://www.robertschneiders.de/meshgeneration/software.html" rel="nofollow">http://www.robertschneiders.de/meshgeneration/software.html</a></p>
+<p dir="auto">Adaptive Mesh Refinement in 2D An Efficient Implementation in Matlab for Triangular and Quadrilateral Meshes</p>
+<p dir="auto">H1-STABILITY OF THE L2-PROJECTION ONTO FINITE ELEMENT SPACES ON ADAPTIVELY REFINED QUADRILATERAL MESHES</p>
+<p dir="auto">Adaptive Mesh Refinement in 2D An Efficient Implementation in Matlab</p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-非定常流" class="anchor" aria-hidden="true" tabindex="-1" href="#非定常流"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>非定常流</h3>
+<p dir="auto"><a href="https://www.mathworks.com/matlabcentral/fileexchange/?q=profileid:4187051" rel="nofollow">https://www.mathworks.com/matlabcentral/fileexchange/?q=profileid:4187051</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-声学" class="anchor" aria-hidden="true" tabindex="-1" href="#声学"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>声学</h3>
+<p dir="auto">Physically Based Sound for Computer Animation and Virtual Environments</p>
+<p dir="auto"><a href="http://s2016.siggraph.org/courses/events/physically-based-sound-computer-animation-and-virtual-environments" rel="nofollow">ACM SIGGRAPH 2016 Course</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-水平集" class="anchor" aria-hidden="true" tabindex="-1" href="#水平集"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>水平集</h3>
+<p dir="auto">教授Osher Stanley,</p>
+<p dir="auto"><em>Geometric Level Set Methods in Imaging,Vision &amp; Graphics</em></p>
+<p dir="auto"><a href="https://www.cs.ubc.ca/~mitchell/ToolboxLS/" rel="nofollow">https://www.cs.ubc.ca/~mitchell/ToolboxLS/</a> matlab示例，非常棒的成系统的代码。</p>
+<p dir="auto"><a href="https://github.com/scikit-image/scikit-image/blob/main/skimage/segmentation/_chan_vese.py">https://github.com/scikit-image/scikit-image/blob/main/skimage/segmentation/_chan_vese.py</a> 有一个有名的python库叫scikit-image，里面实现了chanvese算法</p>
+<p dir="auto"><em>A discrete level-set topology optimization code written in Matlab</em></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-closet-point-method" class="anchor" aria-hidden="true" tabindex="-1" href="#closet-point-method"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Closet Point Method</h3>
+<p dir="auto"><a href="https://www.math.ubc.ca/~cbm/cpm/" rel="nofollow">https://www.math.ubc.ca/~cbm/cpm/</a></p>
+<p dir="auto"><a href="https://github.com/kimy-de/gpuallencahn">https://github.com/kimy-de/gpuallencahn</a> 阿兰方程</p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-多孔介质" class="anchor" aria-hidden="true" tabindex="-1" href="#多孔介质"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>多孔介质</h3>
+<p dir="auto">An Introduction to the Numerics of Flow in Porous Media using Matlab</p>
+<p dir="auto"><a href="https://github.com/pmgbergen/porepy">https://github.com/pmgbergen/porepy</a></p>
+<p dir="auto"><a href="https://github.com/jjhidalgo/HGCchem2">https://github.com/jjhidalgo/HGCchem2</a> 有分层现象，大佬主页<a href="https://jjhidalgo.wordpress.com/codes/" rel="nofollow">https://jjhidalgo.wordpress.com/codes/</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-浅水波" class="anchor" aria-hidden="true" tabindex="-1" href="#浅水波"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>浅水波</h3>
+<p dir="auto">项目地址：<a href="https://web.cse.ohio-state.edu/~wang.3602/courses/cse3541-2019-fall/index.html" rel="nofollow">https://web.cse.ohio-state.edu/~wang.3602/courses/cse3541-2019-fall/index.html</a></p>
+<p dir="auto">unity 包：<a href="https://web.cse.ohio-state.edu/~wang.3602/courses/cse3541-2019-fall/lab4/wave_example.unitypackage" rel="nofollow">https://web.cse.ohio-state.edu/~wang.3602/courses/cse3541-2019-fall/lab4/wave_example.unitypackage</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-多重网格" class="anchor" aria-hidden="true" tabindex="-1" href="#多重网格"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>多重网格</h3>
+<p dir="auto"><a href="http://pages.cs.wisc.edu/~sifakis/project_pages/mgpcg.html" rel="nofollow">http://pages.cs.wisc.edu/~sifakis/project_pages/mgpcg.html</a> 并行多重网格泊松求解器附代码</p>
+<p dir="auto"><a href="https://github.com/JuliaLinearAlgebra/AlgebraicMultigrid.jl/tree/master/src">https://github.com/JuliaLinearAlgebra/AlgebraicMultigrid.jl/tree/master/src</a> 代数多重网格</p>
+<p dir="auto"><a href="https://github.com/danfortunato">https://github.com/danfortunato</a> 直接关注这个人就行了</p>
+<p dir="auto"><a href="https://github.com/pymatting/pymatting/blob/master/pymatting/preconditioner/vcycle.py">https://github.com/pymatting/pymatting/blob/master/pymatting/preconditioner/vcycle.py</a></p>
+<p dir="auto"><a href="https://github.com/lyc102/ifem">https://github.com/lyc102/ifem</a> ifem</p>
+<p dir="auto"><a href="https://amgcl.readthedocs.io/en/latest/examples.html" rel="nofollow">https://amgcl.readthedocs.io/en/latest/examples.html</a></p>
+<p dir="auto"><a href="https://github.com/evstigneevnm/GMG_2D_tests">https://github.com/evstigneevnm/GMG_2D_tests</a></p>
+<p dir="auto"><a href="https://github.com/gnitish18/FEM_Multigrid">https://github.com/gnitish18/FEM_Multigrid</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-多相流" class="anchor" aria-hidden="true" tabindex="-1" href="#多相流"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>多相流</h3>
+<p dir="auto">2D Cartesian Quadtree Adaptive Mesh Refinement (AMR) for multiphase Five Equations Model.<a href="https://github.com/dattv/2D_CARFIVE">https://github.com/dattv/2D_CARFIVE</a></p>
+<p dir="auto"><a href="https://github.com/Spoonacular/LBM_python">https://github.com/Spoonacular/LBM_python</a></p>
+<p dir="auto"><a href="https://github.com/mirsandiharyo/multiphase_flows_front_tracking_python">https://github.com/mirsandiharyo/multiphase_flows_front_tracking_python</a> 模拟泡泡和水滴</p>
+<p dir="auto"><a href="https://github.com/rarbarim/multiphase_flow_simulator">https://github.com/rarbarim/multiphase_flow_simulator</a> 附带报告，作者还有一些别的代码</p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-数学" class="anchor" aria-hidden="true" tabindex="-1" href="#数学"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>数学</h3>
+<p dir="auto"><a href="http://pages.cs.wisc.edu/~sifakis/project_pages/svd.html" rel="nofollow">http://pages.cs.wisc.edu/~sifakis/project_pages/svd.html</a> Computing the Singular Value Decomposition of 3x3 matrices with minimal branching and elementary floating point operations附代码</p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-泡泡" class="anchor" aria-hidden="true" tabindex="-1" href="#泡泡"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>泡泡</h3>
+<p dir="auto">Role of the Dynamic Contact Angle on Splashing</p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-湍流" class="anchor" aria-hidden="true" tabindex="-1" href="#湍流"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>湍流</h3>
+<p dir="auto">DNSLABhttps://md-datasets-cache-zipfiles-prod.s3.eu-west-1.amazonaws.com/6gtnjwwg8j-1.zip</p>
+<p dir="auto">LESCODE <a href="https://cfd.engr.uconn.edu/" rel="nofollow">https://cfd.engr.uconn.edu/</a> 不过代码需要填个申请表格才能获取</p>
+<p dir="auto">本地代码地址：D:\FluidSim\FluidSim\LES\les.r123\les</p>
+<p dir="auto">Turbulent Fluids – SIGGRAPH Course <a href="https://ge.in.tum.de/research/turbulent-fluids-siggraph-course/" rel="nofollow">https://ge.in.tum.de/research/turbulent-fluids-siggraph-course/</a></p>
+<p dir="auto"><a href="https://github.com/thijsbon/CMF_project_thijs_victor">https://github.com/thijsbon/CMF_project_thijs_victor</a> 有湍流和墙函数</p>
+<p dir="auto"><a href="https://github.com/Maikuelet/Turbulence_Modelling_Burgulence">https://github.com/Maikuelet/Turbulence_Modelling_Burgulence</a></p>
+<p dir="auto"><a href="https://github.com/nasa/gfr">https://github.com/nasa/gfr</a></p>
+<p dir="auto"><a href="https://github.com/nasa/TLNS3D">https://github.com/nasa/TLNS3D</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-边界元-1" class="anchor" aria-hidden="true" tabindex="-1" href="#边界元-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>边界元</h3>
+<p dir="auto"><a href="https://github.com/Timmmdavis/CutAndDisplace">https://github.com/Timmmdavis/CutAndDisplace</a></p>
+<p dir="auto"><a href="https://github.com/Timmmdavis/CutAndDisplace">https://github.com/Timmmdavis/CutAndDisplace</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-碰撞检测" class="anchor" aria-hidden="true" tabindex="-1" href="#碰撞检测"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>碰撞检测</h3>
+<p dir="auto">Fast Continuous Collision Detection using Deforming Non-Penetration Filters</p>
+<p dir="auto">项目地址：<a href="http://gamma.cs.unc.edu/DNF/" rel="nofollow">http://gamma.cs.unc.edu/DNF/</a></p>
+<p dir="auto">代码地址：<a href="http://gamma.cs.unc.edu/DNF/request.html" rel="nofollow">http://gamma.cs.unc.edu/DNF/request.html</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-形状优化" class="anchor" aria-hidden="true" tabindex="-1" href="#形状优化"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>形状优化</h3>
+<p dir="auto"><a href="https://github.com/jorgensd/MultiMeshShapeOpt_code">https://github.com/jorgensd/MultiMeshShapeOpt_code</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-电磁学" class="anchor" aria-hidden="true" tabindex="-1" href="#电磁学"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>电磁学</h3>
+<p dir="auto">A generalized polynomial chaos based ensemble Kalman filter with high accuracy</p>
+<p dir="auto"><a href="https://github.com/Andrewpensoneault/Lorenz_63_Stochastic_Galerkin_EnKF">https://github.com/Andrewpensoneault/Lorenz_63_Stochastic_Galerkin_EnKF</a></p>
+<p dir="auto"><a href="https://github.com/joebling/graduate_essay">https://github.com/joebling/graduate_essay</a></p>
+<p dir="auto"><a href="https://github.com/Mjjnuu/DoublePendulum">https://github.com/Mjjnuu/DoublePendulum</a> 似乎是宇宙学</p>
+<p dir="auto">D:\FluidSim\Electron\DoublePendulum-master\python</p>
+<p dir="auto">An introduction to reservoir simulation using MATLAB</p>
+<p dir="auto"><a href="https://github.com/keileg/fvbiot">https://github.com/keileg/fvbiot</a></p>
+<p dir="auto"><a href="https://github.com/tarcisiofischer/helmholtz-solver/tree/master/src/python">https://github.com/tarcisiofischer/helmholtz-solver/tree/master/src/python</a></p>
+<p dir="auto"><a href="https://github.com/ep2lab">https://github.com/ep2lab</a> 一些磁流体</p>
+<p dir="auto"><a href="https://github.com/mgoycoolea/twofluid/blob/master/twofluid.py">https://github.com/mgoycoolea/twofluid/blob/master/twofluid.py</a></p>
+<p dir="auto"><a href="https://github.com/trevorcrupi/EM-MG">https://github.com/trevorcrupi/EM-MG</a> 电磁学的多重网格</p>
+<p dir="auto"><a href="https://github.com/rasalkumar/FEM">https://github.com/rasalkumar/FEM</a></p>
+<p dir="auto"><a href="https://github.com/ocramz/lib_FEM_py">https://github.com/ocramz/lib_FEM_py</a></p>
+<p dir="auto"><a href="https://github.com/eduardobehr/pyjoule">https://github.com/eduardobehr/pyjoule</a></p>
+<p dir="auto"><a href="https://github.com/briandaniel/ComputationalElectromagnetics">https://github.com/briandaniel/ComputationalElectromagnetics</a></p>
+<p dir="auto"><a href="https://github.com/utsav-akhaury/Computational-Electromagnetics-FDTD-Analysis/blob/master/Microstrip_SW-2.py">https://github.com/utsav-akhaury/Computational-Electromagnetics-FDTD-Analysis/blob/master/Microstrip_SW-2.py</a></p>
+<p dir="auto">Commics is an open-source Python module for the study of the magnetization dynamics in ferromagnetic materials via micromagnetic simulations.<a href="https://www.asc.tuwien.ac.at/~praetorius/?id=commics" rel="nofollow">https://www.asc.tuwien.ac.at/~praetorius/?id=commics</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-声学-1" class="anchor" aria-hidden="true" tabindex="-1" href="#声学-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>声学</h3>
+<p dir="auto"><a href="http://www.k-wave.org/download.php" rel="nofollow">http://www.k-wave.org/download.php</a></p>
+<p dir="auto"><a href="https://github.com/pvanberg/DGFEM-Acoustic">https://github.com/pvanberg/DGFEM-Acoustic</a></p>
+<p dir="auto"><a href="https://github.com/1ceaham/AcousticFVTD_GeneralImpedance">https://github.com/1ceaham/AcousticFVTD_GeneralImpedance</a></p>
+<p dir="auto"><a href="https://github.com/ivanmartinezsuarez/Matlab_FVM">https://github.com/ivanmartinezsuarez/Matlab_FVM</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-粘弹性" class="anchor" aria-hidden="true" tabindex="-1" href="#粘弹性"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>粘弹性</h3>
+<p dir="auto"><a href="https://github.com/labsin-unesp/Viscoel-stico-Kelvin-Voigt">https://github.com/labsin-unesp/Viscoel-stico-Kelvin-Voigt</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-杂" class="anchor" aria-hidden="true" tabindex="-1" href="#杂"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>杂</h3>
+<p dir="auto"><a href="https://people.sc.fsu.edu/~jburkardt/m_src/" rel="nofollow">https://people.sc.fsu.edu/~jburkardt/m_src/</a> 有各种各样的有限元matlab代码</p>
+<p dir="auto"><a href="https://github.com/weymouth/WaterLily.jl">https://github.com/weymouth/WaterLily.jl</a> 漂亮的NS方程模拟</p>
+<p dir="auto">Extraction of Distinguished Hyperbolic Trajectories for 2D Time-Dependent Vector Field Topology</p>
+<p dir="auto">介绍页面：<a href="https://vcg.iwr.uni-heidelberg.de/people/sadlo/" rel="nofollow">https://vcg.iwr.uni-heidelberg.de/people/sadlo/</a></p>
+<p dir="auto">代码地址：<a href="https://github.com/lhofmann/eurovis2020_hyperbolic_trajectories">https://github.com/lhofmann/eurovis2020_hyperbolic_trajectories</a></p>
+<p dir="auto">A PArallel Robust Interface Simulator that combines VOF and Front-Tracking</p>
+<p dir="auto">介绍页面：<a href="http://www.ida.upmc.fr/~zaleski/paris/index.html" rel="nofollow">http://www.ida.upmc.fr/~zaleski/paris/index.html</a></p>
+<p dir="auto">代码地址：<a href="http://www.ida.upmc.fr/~zaleski/paris/paris-stable.tar.gz" rel="nofollow">http://www.ida.upmc.fr/~zaleski/paris/paris-stable.tar.gz</a></p>
+<p dir="auto">A Hyperbolic Geometric Flow for Evolving Films and Foams</p>
+<p dir="auto">项目地址：<a href="https://ryichando.graphics/" rel="nofollow">https://ryichando.graphics/</a></p>
+<p dir="auto">代码地址：<a href="https://github.com/sdsgisd/HGF">https://github.com/sdsgisd/HGF</a></p>
+<p dir="auto">Interpolation Nodes for High-order Lagrange Finite Elements</p>
+<p dir="auto"><a href="https://github.com/pinkieli/Interpolation-Nodes-for-High-order-Lagrange-Finite-Elements">https://github.com/pinkieli/Interpolation-Nodes-for-High-order-Lagrange-Finite-Elements</a>.</p>
+<p dir="auto">Semi-Riemannian Manifold Optimization</p>
+<p dir="auto"><a href="https://github.com/trgao10/SemiRiem">https://github.com/trgao10/SemiRiem</a></p>
+<p dir="auto"><a href="https://github.com/noamaig/hyperbolic_orbifolds">https://github.com/noamaig/hyperbolic_orbifolds</a></p>
+<p dir="auto">An entropy-stable hybrid scheme for simulations of transcritical real-fluid flow[JCP的]</p>
+<p dir="auto"><a href="https://github.com/peterma123456789/DoubleFlux-1D">https://github.com/peterma123456789/DoubleFlux-1D</a></p>
+<p dir="auto">Ice sheet flow with thermally activated sliding</p>
+<p dir="auto"><a href="https://github.com/elisamantelli/subtemperate_sliding_rspa_2019">https://github.com/elisamantelli/subtemperate_sliding_rspa_2019</a></p>
+<p dir="auto">Wavelet-Fourier CORSING techniques for multi-dimensional advection-diffusion-reaction equations</p>
+<p dir="auto"><a href="https://github.com/simone-brugiapaglia/corsing-wavelet-fourier-adr">https://github.com/simone-brugiapaglia/corsing-wavelet-fourier-adr</a></p>
+<p dir="auto">River Profile</p>
+<p dir="auto"><a href="https://github.com/sfgallen/ChiProfiler">https://github.com/sfgallen/ChiProfiler</a></p>
+<p dir="auto"><a href="https://github.com/ISSI2015/M4">https://github.com/ISSI2015/M4</a> Real-Time Deformation</p>
+<p dir="auto">A fast implicit method for time-dependent Hamilton-Jacobi PDEs</p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-超声速可压缩" class="anchor" aria-hidden="true" tabindex="-1" href="#超声速可压缩"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>超声速可压缩</h3>
+<p dir="auto"><a href="https://github.com/Fanxiaotsing/One-dimensional-aero-heating-code">https://github.com/Fanxiaotsing/One-dimensional-aero-heating-code</a> 平板对流换热</p>
+<p dir="auto"><a href="https://github.com/holdmygithub/ASOInviscidSupersonicFlow">https://github.com/holdmygithub/ASOInviscidSupersonicFlow</a> 机翼设计</p>
+<p dir="auto">D:\FluidSim\FluidSim\NavierStokes\ASOInviscidSupersonicFlow-master\ASOInviscidSupersonicFlow-master</p>
+<p dir="auto"><a href="https://github.com/amikkonen/lidDrivenCavityCompressibleFlowPython">https://github.com/amikkonen/lidDrivenCavityCompressibleFlowPython</a> 可压缩顶盖驱动</p>
+<p dir="auto"><a href="https://github.com/GerardBoberg/CompressiblePipeFlow">https://github.com/GerardBoberg/CompressiblePipeFlow</a></p>
+<p dir="auto">D:\FluidSim\FluidSim\CompressibeNewgood\CompressiblePipeFlow-master\CompressiblePipeFlow-master</p>
+<p dir="auto"><a href="https://home.cscamm.umd.edu/centpack/examples/euler2d.htm#press" rel="nofollow">https://home.cscamm.umd.edu/centpack/examples/euler2d.htm#press</a></p>
+<p dir="auto"><a href="https://github.com/silentmovie/RTmodel">https://github.com/silentmovie/RTmodel</a> RT不稳定</p>
+<p dir="auto">PYRO2 开源库<a href="https://python-hydro.github.io/pyro2/compressible_basics.html" rel="nofollow">https://python-hydro.github.io/pyro2/compressible_basics.html</a></p>
+<p dir="auto">超级好<a href="https://github.com/jingchangshi/NumericalMethodsForConservationLawsDG">https://github.com/jingchangshi/NumericalMethodsForConservationLawsDG</a></p>
+<p dir="auto"><a href="https://archive.siam.org/books/cs18/" rel="nofollow">https://archive.siam.org/books/cs18/</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-空气动力" class="anchor" aria-hidden="true" tabindex="-1" href="#空气动力"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>空气动力</h3>
+<p dir="auto"><a href="https://github.com/Maikuelet/FEM_Airplane">https://github.com/Maikuelet/FEM_Airplane</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-simplepiso" class="anchor" aria-hidden="true" tabindex="-1" href="#simplepiso"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>SIMPLE/PISO</h3>
+<p dir="auto"><a href="https://github.com/mehrdadyo/LS-IBM">https://github.com/mehrdadyo/LS-IBM</a></p>
+<p dir="auto">Joukowski transformhttps://<a href="http://www.research-collection.ethz.ch/handle/20.500.11850/146738" rel="nofollow">www.research-collection.ethz.ch/handle/20.500.11850/146738</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-混合网格粒子法" class="anchor" aria-hidden="true" tabindex="-1" href="#混合网格粒子法"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>混合网格粒子法</h3>
+<p dir="auto">PolyPIC: the Polymorphic-Particle-in-Cell Method for Fluid-Kinetic Coupling</p>
+<p dir="auto"><a href="https://github.com/smarkidis/fluid-kinetic-PIC">https://github.com/smarkidis/fluid-kinetic-PIC</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-大佬主页" class="anchor" aria-hidden="true" tabindex="-1" href="#大佬主页"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>大佬主页</h3>
+<p dir="auto">下面的主页全部是附有开源代码的</p>
+<p dir="auto"><a href="https://cs.uwaterloo.ca/~c2batty/" rel="nofollow">https://cs.uwaterloo.ca/~c2batty/</a></p>
+<p dir="auto"><a href="https://zhxx1987.github.io/#cod" rel="nofollow">https://zhxx1987.github.io/#cod</a> 猜猜这是谁？</p>
+<p dir="auto"><a href="http://gamma.cs.unc.edu/software/" rel="nofollow">http://gamma.cs.unc.edu/software/</a> 这是个项目主页，开源代码很多</p>
+<p dir="auto"><a href="https://www.cc.gatech.edu/~turk/" rel="nofollow">https://www.cc.gatech.edu/~turk/</a></p>
+<p dir="auto"><a href="https://people.llnl.gov/lindstrom2" rel="nofollow">https://people.llnl.gov/lindstrom2</a> 偏向几何数据处理</p>
+<p dir="auto"><a href="http://ntoken.com/pubs.html#Thuerey_2016_ofblend" rel="nofollow">http://ntoken.com/pubs.html#Thuerey_2016_ofblend</a></p>
+<p dir="auto"><a href="http://www.tkim.graphics/" rel="nofollow">http://www.tkim.graphics/</a></p>
+<p dir="auto"><a href="http://www.cmap.polytechnique.fr/~allaire/" rel="nofollow">http://www.cmap.polytechnique.fr/~allaire/</a></p>
+<p dir="auto"><a href="https://sites.google.com/view/valentinresseguier/projects" rel="nofollow">https://sites.google.com/view/valentinresseguier/projects</a></p>
+<p dir="auto"><a href="https://www.konrad-simon.eu/wordpress/?page_id=91" rel="nofollow">https://www.konrad-simon.eu/wordpress/?page_id=91</a></p>
+<p dir="auto"><a href="http://www-personal.umich.edu/~ndk/" rel="nofollow">http://www-personal.umich.edu/~ndk/</a></p>
+<p dir="auto"><a href="https://people.ece.ubc.ca/kaynama/" rel="nofollow">https://people.ece.ubc.ca/kaynama/</a></p>
+<p dir="auto"><a href="https://math.berkeley.edu/~strain/Codes/index.html" rel="nofollow">https://math.berkeley.edu/~strain/Codes/index.html</a></p>
+<p dir="auto"><a href="https://www.cwimd.nl/doku.php?id=codes:start" rel="nofollow">https://www.cwimd.nl/doku.php?id=codes:start</a></p>
+<p dir="auto"><a href="https://www.cwi.nl/research/groups/multiscale-dynamics#software" rel="nofollow">https://www.cwi.nl/research/groups/multiscale-dynamics#software</a></p>
+<p dir="auto"><a href="https://math.nist.gov/~WMitchell/" rel="nofollow">https://math.nist.gov/~WMitchell/</a></p>
+<p dir="auto"><a href="https://www.mcs.anl.gov/~fischer/me528/" rel="nofollow">https://www.mcs.anl.gov/~fischer/me528/</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-particle-in-cell" class="anchor" aria-hidden="true" tabindex="-1" href="#particle-in-cell"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Particle In Cell</h3>
+<p dir="auto"><a href="https://medium.com/swlh/create-your-own-plasma-pic-simulation-with-python-39145c66578b" rel="nofollow">https://medium.com/swlh/create-your-own-plasma-pic-simulation-with-python-39145c66578b</a></p>
+<p dir="auto">吐槽这个网站验证机制太弱智，如果它要求你升级会员才能查看剩下内容，那么你只要重新换个浏览器就行了。</p>
+<p dir="auto"><a href="https://www.particleincell.com/2011/particle-in-cell-example/" rel="nofollow">https://www.particleincell.com/2011/particle-in-cell-example/</a></p>
+<p dir="auto"><a href="https://personalpages.manchester.ac.uk/staff/david.silvester/" rel="nofollow">https://personalpages.manchester.ac.uk/staff/david.silvester/</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-开源项目" class="anchor" aria-hidden="true" tabindex="-1" href="#开源项目"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>开源项目</h3>
+<p dir="auto">pyro2</p>
+<p dir="auto">netgen</p>
+<p dir="auto">scipy这玩意有一些矩阵迭代求解法</p>
+<p dir="auto"><a href="http://granoo.52083.n8.nabble.com/" rel="nofollow">http://granoo.52083.n8.nabble.com/</a></p>
+<p dir="auto">clawpack</p>
+<p dir="auto">aspect <a href="https://aspect.geodynamics.org/" rel="nofollow">https://aspect.geodynamics.org/</a></p>
+<p dir="auto">dealii</p>
+<p dir="auto">fenics</p>
+<p dir="auto"><a href="http://milamin.org/downloads/" rel="nofollow">http://milamin.org/downloads/</a></p>
+<p dir="auto"><a href="https://personalpages.manchester.ac.uk/staff/david.silvester/ifiss/" rel="nofollow">https://personalpages.manchester.ac.uk/staff/david.silvester/ifiss/</a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-不错的论文" class="anchor" aria-hidden="true" tabindex="-1" href="#不错的论文"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>不错的论文</h3>
+<p dir="auto">内容很棒的论文以及讲义</p>
+<p dir="auto">Lecture notes Introduction to numerical methods for interfacial flows</p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-很有个性的论文标题" class="anchor" aria-hidden="true" tabindex="-1" href="#很有个性的论文标题"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>很有个性的论文标题</h3>
+<p dir="auto">内容不管，但是标题值得写上一万字来吐槽</p>
+<p dir="auto">A massive fractal in days, not years</p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-没用但暂时不删的链接" class="anchor" aria-hidden="true" tabindex="-1" href="#没用但暂时不删的链接"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>没用但暂时不删的链接</h3>
+<p dir="auto">code_aster <a href="https://code-aster.org/spip.php?article920" rel="nofollow">https://code-aster.org/spip.php?article920</a></p>
+</article></div>
